@@ -12,8 +12,10 @@ const Timer = () => {
   }
 
   return (
-    <div className="timer">
-      Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+    <div className="bg-gray-200 rounded-lg p-4 mb-4 text-center">
+      <span className="font-bold text-lg">
+        Time Remaining: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}
+      </span>
     </div>
   );
 };
